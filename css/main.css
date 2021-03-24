@@ -753,7 +753,7 @@ img {
   background-color: var(--background-color-dark);
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .page-footer {
     text-align: center;
   }
