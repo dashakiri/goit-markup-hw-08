@@ -753,7 +753,7 @@ img {
   background-color: var(--background-color-dark);
 }
 
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 480px) and (max-width: 1199px) {
   .page-footer {
     text-align: center;
   }
@@ -978,7 +978,7 @@ img {
   border-radius: 4px;
 }
 
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 480px) and (max-width: 1199px) {
   .submit__button {
     margin-top: 20px;
   }
@@ -1222,7 +1222,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 370px;
+  max-width: 370px;
   cursor: pointer;
   font-size: 12px;
   line-height: 1.16;
@@ -1230,7 +1230,7 @@ img {
 
 @media (min-width: 1200px) {
   .checkbox {
-    width: 423px;
+    max-width: 423px;
     font-size: var(--font-size);
     line-height: var(--line-height);
   }

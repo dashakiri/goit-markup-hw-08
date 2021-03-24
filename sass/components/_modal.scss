@@ -148,14 +148,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 370px;
+  max-width: 370px;
   cursor: pointer;
 
   font-size: 12px;
   line-height: 1.16;
 
   @media (min-width: 1200px) {
-    width: 423px;
+    max-width: 423px;
 
     font-size: var(--font-size);
     line-height: var(--line-height);
