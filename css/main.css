@@ -900,7 +900,7 @@ img {
   color: var(--primary-color-white);
 }
 
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 480px) and (max-width: 1199px) {
   .email__input {
     min-width: 450px;
   }
