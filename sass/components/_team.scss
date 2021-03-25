@@ -51,7 +51,7 @@
 }
 
 .team-list__member:nth-child(n + 2) {
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     margin-top: var(--set-gap);
   }
 }

@@ -1,11 +1,12 @@
 .page-header__container {
   min-height: 60px;
 
-  @include flexbox(space-between, center);
+  @include flexbox(space-between, baseline);
   padding-top: 16px;
   padding-bottom: 16px;
 
   @media (min-width: 768px) {
+    @include flexbox(space-between, center);
     height: 80px;
   }
 
@@ -98,4 +99,20 @@
   @media (min-width: 1200px) {
     margin-left: var(--set-gap);
   }
+}
+
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--blue-color);
+}
+
+.navigation-list__link.current {
+  position: relative;
+  color: var(--blue-color);
 }

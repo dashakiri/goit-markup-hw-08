@@ -27,7 +27,7 @@
 }
 
 .features-list__item:nth-child(n + 2) {
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     margin-top: var(--set-gap);
   }
 }
@@ -60,7 +60,10 @@
   font-size: var(--font-size);
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features-list__text {
