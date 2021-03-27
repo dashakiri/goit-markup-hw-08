@@ -992,7 +992,7 @@ img {
   border-radius: 4px;
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .submit__button {
     margin-top: 20px;
   }
@@ -1059,15 +1059,10 @@ img {
   left: 50%;
   padding: 40px;
   max-width: 450px;
+  max-height: 609px;
   background-color: #fff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-@media (min-width: 480px) and (max-height: 1199px) {
-  .modal {
-    max-height: 609px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -1149,7 +1144,7 @@ img {
 
 .form-item__input {
   padding: 11px 20px 11px 42px;
-  height: 40px;
+  max-height: 40px;
 }
 
 .form-item__input--style {
@@ -1190,8 +1185,16 @@ img {
 
 .form-item__textarea {
   padding: 12px 16px;
+  max-width: 370px;
   height: 120px;
   resize: none;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .form-item__textarea {
+    width: 201px;
+    height: 80px;
+  }
 }
 
 .form-item__textarea::-webkit-input-placeholder {
@@ -1253,6 +1256,13 @@ img {
   line-height: 1.16;
 }
 
+@media (min-width: 320px) and (max-width: 479px) {
+  .checkbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media (min-width: 1200px) {
   .checkbox {
     max-width: 423px;
@@ -1265,6 +1275,12 @@ img {
   display: inline-block;
   border: 1px solid var(--secondary-color-headings);
   border-radius: 2px;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .checkbox__icon {
+    margin-bottom: 5px;
+  }
 }
 
 .checkbox__icon use {
@@ -1371,6 +1387,12 @@ img {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .filter-list__item:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 389px) {
+  .filter-list__item:nth-child(n + 3) {
     margin-top: 15px;
   }
 }

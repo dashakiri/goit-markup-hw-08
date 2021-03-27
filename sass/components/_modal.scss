@@ -20,12 +20,9 @@
   left: 50%;
   padding: 40px;
   max-width: 450px;
+  max-height: 609px;
   background-color: #fff;
   transform: translate(-50%, -50%);
-
-  @media (min-width: 480px) and (max-height: 1199px) {
-    max-height: 609px;
-  }
 
   @media (min-width: 1200px) {
     max-width: 528px;
@@ -98,7 +95,7 @@
 
 .form-item__input {
   padding: 11px 20px 11px 42px;
-  height: 40px;
+  max-height: 40px;
 }
 
 .form-item__input--style {
@@ -134,8 +131,14 @@
 
 .form-item__textarea {
   padding: 12px 16px;
+  max-width: 370px;
   height: 120px;
   resize: none;
+
+  @media (min-width: 320px) and (max-width: 479px) {
+    width: 201px;
+    height: 80px;
+  }
 }
 
 .form-item__textarea::placeholder {
@@ -161,6 +164,10 @@
   font-size: 12px;
   line-height: 1.16;
 
+  @media (min-width: 320px) and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
+
   @media (min-width: 1200px) {
     max-width: 423px;
 
@@ -173,6 +180,10 @@
   display: inline-block;
   border: 1px solid var(--secondary-color-headings);
   border-radius: 2px;
+
+  @media (min-width: 320px) and (max-width: 479px) {
+    margin-bottom: 5px;
+  }
 }
 
 .checkbox__icon use {

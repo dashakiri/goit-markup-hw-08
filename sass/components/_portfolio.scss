@@ -50,6 +50,12 @@
   }
 }
 
+.filter-list__item:nth-child(n + 3) {
+  @media (min-width: 320px) and (max-width: 389px) {
+    margin-top: 15px;
+  }
+}
+
 .project-list {
   margin-top: 40px;
 
